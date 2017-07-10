@@ -1,5 +1,5 @@
 // 高階関数
-function myHigherFunction () {
+function myHigherFunction (func) {
     console.log ('myHigherFunction');
 
     func ();
@@ -9,5 +9,6 @@ function myHigherFunction () {
 function outsideFunction () {
     console.log ('outsideFunction');
 }
+
 
 myHigherFunction (outsideFunction);
