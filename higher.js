@@ -9,9 +9,15 @@ function arraywalk(data, f) {
 // 配列を処理するためのユーザー定義関数
 // コールバック関数
 function showElement(value, key) {
-    console.log(key + ':' + value);
+    console.log(key + ' : ' + value);
+}
+
+// コールバック関数
+function showDecoratedElement (value, key) {
+// console.log('キー(' + key + ') : 値(' + value + ')');
+    console.log(`キー(${key}) : 値(${value})`);
 }
 
 var ary = [1, 2, 4, 8, 16];
 // arraywalk(ary, showElement);
-ary.forEach (showElement);
+ary.forEach (showDecoratedElement);
